@@ -76,5 +76,5 @@ adService(app);
 var messageService = require('./services/message.service.server');
 messageService(app);
 
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
 exports = module.exports = app;
